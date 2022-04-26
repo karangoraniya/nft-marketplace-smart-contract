@@ -41,11 +41,6 @@ describe('NFTMarket', () => {
 
     await nftMarket.connect(owner).buyNft(1);
 
-    // await nftMarket.connect(addr1.address).buyNft(1);
-    // await buyNFT.wait();
-    // await nftToken.balanceOf(nftAddress);
-
     const amount = await nftToken.balanceOf(nftAddress);
-    console.log(amount.toString());
   });
 });
